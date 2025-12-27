@@ -6,7 +6,7 @@
 /*   By: sfaouzi <sfaouzi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/27 18:23:46 by sfaouzi           #+#    #+#             */
-/*   Updated: 2025/12/27 19:17:11 by sfaouzi          ###   ########.fr       */
+/*   Updated: 2025/12/27 19:27:19 by sfaouzi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,4 +29,14 @@ void Zombie::announce()
 
 Zombie* newZombie( std::string name )
 {
+    Zombie *zombie = new Zombie("said");
+
+    return (zombie);
+}
+
+void randomChump( std::string name )
+{
+    Zombie zombie("said");
+    
+    zombie.announce();
 }
