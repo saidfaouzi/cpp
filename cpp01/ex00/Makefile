@@ -6,7 +6,7 @@
 #    By: sfaouzi <sfaouzi@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/12/27 18:22:36 by sfaouzi           #+#    #+#              #
-#    Updated: 2025/12/27 18:22:37 by sfaouzi          ###   ########.fr        #
+#    Updated: 2025/12/27 20:57:09 by sfaouzi          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,8 +17,9 @@ CXX     = c++
 CXXFLAGS= -Wall -Wextra -Werror -std=c++98
 
 SRCS    = main.cpp \
-          PhoneBook.cpp \
-          Contact.cpp
+        	Zombie.cpp \
+			newZombie.cpp \
+			randomChump.cpp
 
 OBJS    = $(SRCS:.cpp=.o)
 

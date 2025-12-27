@@ -1,31 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Zombie.cpp                                         :+:      :+:    :+:   */
+/*   newZombie.cpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sfaouzi <sfaouzi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/12/27 18:23:46 by sfaouzi           #+#    #+#             */
-/*   Updated: 2025/12/27 20:55:56 by sfaouzi          ###   ########.fr       */
+/*   Created: 2025/12/27 20:55:30 by sfaouzi           #+#    #+#             */
+/*   Updated: 2025/12/27 20:58:05 by sfaouzi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
-Zombie::Zombie(std::string new_name)
+Zombie* newZombie( std::string name )
 {
-    name = new_name;
+    Zombie *zombie = new Zombie(name);
+
+    return (zombie);
 }
-
-Zombie::Zombie()
-{
-    
-}
-
-void Zombie::announce()
-{
-    std::cout << name << ": BraiiiiiiinnnzzzZ...\n";
-}
-
-
-

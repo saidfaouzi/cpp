@@ -6,7 +6,7 @@
 /*   By: sfaouzi <sfaouzi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/27 18:44:10 by sfaouzi           #+#    #+#             */
-/*   Updated: 2025/12/27 18:46:07 by sfaouzi          ###   ########.fr       */
+/*   Updated: 2025/12/27 21:03:46 by sfaouzi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,13 @@
 
 int main()
 {
-    Zombie ob("bo3aaaaaazaaaaaaaaaaaaaaa");
+    Zombie ob("foo");
+
+    ob.announce();
+
+    Zombie *zombie = newZombie("said");
+    zombie->announce();
+
+    randomChump("faouzi");
+    
 }

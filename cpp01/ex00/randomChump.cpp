@@ -1,31 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Zombie.cpp                                         :+:      :+:    :+:   */
+/*   randomChump.cpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sfaouzi <sfaouzi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/12/27 18:23:46 by sfaouzi           #+#    #+#             */
-/*   Updated: 2025/12/27 20:55:56 by sfaouzi          ###   ########.fr       */
+/*   Created: 2025/12/27 20:55:26 by sfaouzi           #+#    #+#             */
+/*   Updated: 2025/12/27 21:03:26 by sfaouzi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
-Zombie::Zombie(std::string new_name)
+void randomChump( std::string name )
 {
-    name = new_name;
-}
-
-Zombie::Zombie()
-{
+    Zombie zombie(name);
     
+    zombie.announce();
+
 }
-
-void Zombie::announce()
-{
-    std::cout << name << ": BraiiiiiiinnnzzzZ...\n";
-}
-
-
 
