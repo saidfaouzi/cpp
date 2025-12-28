@@ -6,7 +6,7 @@
 /*   By: sfaouzi <sfaouzi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/28 12:37:59 by sfaouzi           #+#    #+#             */
-/*   Updated: 2025/12/28 14:15:16 by sfaouzi          ###   ########.fr       */
+/*   Updated: 2025/12/28 19:10:00 by sfaouzi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,4 +20,13 @@ const std::string& Weapon::getType()
 void Weapon::setType(std::string new_type)
 {
     type = new_type;
+}
+
+Weapon::Weapon()
+{
+    
+}
+Weapon::Weapon(std::string name)
+{
+    type = name;
 }
