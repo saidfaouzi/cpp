@@ -1,27 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Zombie.hpp                                         :+:      :+:    :+:   */
+/*   HumanA.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sfaouzi <sfaouzi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/12/28 11:00:18 by sfaouzi           #+#    #+#             */
-/*   Updated: 2025/12/28 11:00:19 by sfaouzi          ###   ########.fr       */
+/*   Created: 2025/12/28 12:41:57 by sfaouzi           #+#    #+#             */
+/*   Updated: 2025/12/28 16:36:51 by sfaouzi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <iostream>
+#include "HumanA.hpp"
 
-class Zombie
+void HumanA::attack()
 {
-    private:
-        std::string name;
-    public:
-        Zombie();
-        Zombie(std::string name);
-        ~Zombie();
-        void announce(void);
-};
-
-Zombie* newZombie( std::string name );
-void randomChump( std::string name );
+    std::cout << name << "attacks with their" << ob.getType();
+}

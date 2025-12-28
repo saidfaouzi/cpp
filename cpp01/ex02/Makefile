@@ -5,21 +5,17 @@
 #                                                     +:+ +:+         +:+      #
 #    By: sfaouzi <sfaouzi@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2025/12/27 18:22:36 by sfaouzi           #+#    #+#              #
-#    Updated: 2025/12/28 10:19:29 by sfaouzi          ###   ########.fr        #
+#    Created: 2025/12/28 11:43:37 by sfaouzi           #+#    #+#              #
+#    Updated: 2025/12/28 11:44:39 by sfaouzi          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-
-NAME    = BraiiiiiiinnnzzzZ
+NAME    = BRAIN
 
 CXX     = c++
 CXXFLAGS= -Wall -Wextra -Werror -std=c++98
 
-SRCS    = main.cpp \
-        	Zombie.cpp \
-			newZombie.cpp \
-			randomChump.cpp
+SRCS    = main.cpp
 
 OBJS    = $(SRCS:.cpp=.o)
 
