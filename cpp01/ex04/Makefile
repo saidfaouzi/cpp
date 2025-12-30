@@ -5,20 +5,17 @@
 #                                                     +:+ +:+         +:+      #
 #    By: sfaouzi <sfaouzi@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2025/12/28 12:35:08 by sfaouzi           #+#    #+#              #
-#    Updated: 2025/12/29 11:24:00 by sfaouzi          ###   ########.fr        #
+#    Created: 2025/12/29 11:22:40 by sfaouzi           #+#    #+#              #
+#    Updated: 2025/12/29 12:56:20 by sfaouzi          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME    = violence
+NAME    = Sed_is_for_losers
 
 CXX     = c++
 CXXFLAGS= -Wall -Wextra -Werror -std=c++98
 
-SRCS    = HumanA.cpp \
-		  HumanB.cpp \
-		  main.cpp \
-		  Weapon.cpp
+SRCS    = main.cpp
 
 OBJS    = $(SRCS:.cpp=.o)
 

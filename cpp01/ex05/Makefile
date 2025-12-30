@@ -5,20 +5,17 @@
 #                                                     +:+ +:+         +:+      #
 #    By: sfaouzi <sfaouzi@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2025/12/28 12:35:08 by sfaouzi           #+#    #+#              #
-#    Updated: 2025/12/29 11:24:00 by sfaouzi          ###   ########.fr        #
+#    Created: 2025/12/29 17:17:00 by sfaouzi           #+#    #+#              #
+#    Updated: 2025/12/29 17:36:55 by sfaouzi          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME    = violence
+NAME    = Harl
 
 CXX     = c++
 CXXFLAGS= -Wall -Wextra -Werror -std=c++98
 
-SRCS    = HumanA.cpp \
-		  HumanB.cpp \
-		  main.cpp \
-		  Weapon.cpp
+SRCS    = main.cpp Harl.cpp
 
 OBJS    = $(SRCS:.cpp=.o)
 

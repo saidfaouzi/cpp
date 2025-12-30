@@ -6,7 +6,7 @@
 /*   By: sfaouzi <sfaouzi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/28 12:42:31 by sfaouzi           #+#    #+#             */
-/*   Updated: 2025/12/28 18:59:39 by sfaouzi          ###   ########.fr       */
+/*   Updated: 2025/12/29 11:28:49 by sfaouzi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,12 +16,11 @@
 class HumanB
 {
     private:
-        Weapon ob;
         std::string name;
+        Weapon *ob;
     public:
-        HumanB();
         HumanB(std::string new_name);
-        void setWeapon(Weapon new_ob);
+        void setWeapon(Weapon &new_ob);
         void attack();
 };
 #endif

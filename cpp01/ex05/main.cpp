@@ -5,22 +5,19 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: sfaouzi <sfaouzi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/12/27 18:44:10 by sfaouzi           #+#    #+#             */
-/*   Updated: 2025/12/29 18:04:53 by sfaouzi          ###   ########.fr       */
+/*   Created: 2025/12/29 17:17:36 by sfaouzi           #+#    #+#             */
+/*   Updated: 2025/12/29 17:44:02 by sfaouzi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+
+#include "Harl.hpp"
 
 int main()
 {
-    Zombie ob("foo");
-
-    ob.announce();
-
-    Zombie *zombie = newZombie("said");
-    zombie->announce();
-
-    randomChump("faouzi");
-    delete zombie;
+    Harl obj;
+    obj.complain("DEBUG");
+    obj.complain("INFO");
+    obj.complain("WARNING");
+    obj.complain("ERROR");
 }

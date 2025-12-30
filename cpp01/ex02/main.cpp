@@ -6,7 +6,7 @@
 /*   By: sfaouzi <sfaouzi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/28 11:44:55 by sfaouzi           #+#    #+#             */
-/*   Updated: 2025/12/28 12:13:51 by sfaouzi          ###   ########.fr       */
+/*   Updated: 2025/12/29 18:12:08 by sfaouzi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@ int main()
 
     std::string *stringPTR = &str;
     std::string &stringREF = str;
+    
 
     std::cout << &str << "\n";
     std::cout << stringPTR << "\n";
