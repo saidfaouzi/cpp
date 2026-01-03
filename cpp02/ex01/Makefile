@@ -5,17 +5,17 @@
 #                                                     +:+ +:+         +:+      #
 #    By: sfaouzi <sfaouzi@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2025/12/29 11:22:40 by sfaouzi           #+#    #+#              #
-#    Updated: 2025/12/30 22:27:55 by sfaouzi          ###   ########.fr        #
+#    Created: 2026/01/01 16:53:51 by sfaouzi           #+#    #+#              #
+#    Updated: 2026/01/03 11:26:04 by sfaouzi          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME    = Sed_is_for_losers
+NAME    =  Canonical
 
 CXX     = c++
 CXXFLAGS= -Wall -Wextra -Werror -std=c++98
 
-SRCS    = main.cpp
+SRCS    = main.cpp Fixed.cpp
 
 OBJS    = $(SRCS:.cpp=.o)
 

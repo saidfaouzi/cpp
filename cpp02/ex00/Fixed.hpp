@@ -1,26 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Fixed.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sfaouzi <sfaouzi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/12/27 18:44:10 by sfaouzi           #+#    #+#             */
-/*   Updated: 2026/01/01 17:19:16 by sfaouzi          ###   ########.fr       */
+/*   Created: 2026/01/03 09:52:31 by sfaouzi           #+#    #+#             */
+/*   Updated: 2026/01/03 13:01:54 by sfaouzi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
-
-int main()
+#include <iostream>
+#include <cmath>
+class Fixed
 {
-    Zombie ob("foo");
+private:
+    int i;
+    static const int j;
 
-    ob.announce();
+public:
+    Fixed();
+    Fixed(const Fixed &obj);
+    Fixed &operator=(const Fixed &obj);
+    ~Fixed();
+    int getRawBits(void) const;
+    void setRawBits(int const raw);
+};
 
-    Zombie *zombie = newZombie("said");
-    zombie->announce();
-
-    randomChump("faouzi");
-    delete zombie;
-}
