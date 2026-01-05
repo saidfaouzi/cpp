@@ -6,10 +6,12 @@
 /*   By: sfaouzi <sfaouzi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/03 09:52:31 by sfaouzi           #+#    #+#             */
-/*   Updated: 2026/01/03 13:01:54 by sfaouzi          ###   ########.fr       */
+/*   Updated: 2026/01/03 17:14:01 by sfaouzi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#ifndef FIXED_HPP
+#define FIXED_HPP
 #include <iostream>
 #include <cmath>
 class Fixed
@@ -27,3 +29,4 @@ public:
     void setRawBits(int const raw);
 };
 
+#endif

@@ -1,38 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   megaphone.cpp                                      :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sfaouzi <sfaouzi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/12/23 17:42:39 by sfaouzi           #+#    #+#             */
-/*   Updated: 2026/01/03 13:06:57 by sfaouzi          ###   ########.fr       */
+/*   Created: 2026/01/01 17:59:22 by sfaouzi           #+#    #+#             */
+/*   Updated: 2026/01/04 20:38:22 by sfaouzi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <iostream>
+#include "Fixed.hpp"
 
-int main(int ac,char **av)
-{
-    int i;
-    int j;
+int main( void ) {
+Fixed a;
+Fixed const b( Fixed( 5.05f ) * Fixed( 2 ) );
+std::cout << a << std::endl;
+std::cout << ++a << std::endl;
+std::cout << a << std::endl;
+std::cout << a++ << std::endl;
+std::cout << a << std::endl;
+std::cout << b << std::endl;
+std::cout << Fixed::max( a, b ) << std::endl<< std::endl;
 
-    i = 1;
-    if(ac == 1)
-    {
-        std::cout << "* LOUD AND UNBEARABLE FEEDBACK NOISE *\n";
-        return (1);
-    }
-    while (av[i])
-    {
-        j = 0;
-        while (av[i][j])
-        {
-            std::cout << (char)toupper(av[i][j]);
-            j++;
-        }
-        i++;
-    }
-    std::cout << "\n";
-    return 0;
+return 0;
 }
