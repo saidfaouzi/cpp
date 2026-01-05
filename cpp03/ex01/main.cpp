@@ -6,18 +6,19 @@
 /*   By: sfaouzi <sfaouzi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/05 22:45:38 by sfaouzi           #+#    #+#             */
-/*   Updated: 2026/01/05 22:49:14 by sfaouzi          ###   ########.fr       */
+/*   Updated: 2026/01/05 23:32:42 by sfaouzi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
-#include "ClapTrap.hpp"
+#include "ScavTrap.hpp"
 
 int main()
 {
-    ClapTrap x;
+    ScavTrap x;
     x.attack("said");
     x.takeDamage(9);
     x.beRepaired(200);
     x.attack("said");
+    x.guardGate();
 }
