@@ -6,7 +6,7 @@
 /*   By: sfaouzi <sfaouzi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/05 23:04:40 by sfaouzi           #+#    #+#             */
-/*   Updated: 2026/01/05 23:33:20 by sfaouzi          ###   ########.fr       */
+/*   Updated: 2026/01/06 15:00:35 by sfaouzi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,10 +26,12 @@ ScavTrap::ScavTrap(std::string name) : ClapTrap(name)
     damage = 20;
     std::cout << "Parametrized constructor" << std::endl;
 }
+
 ScavTrap::ScavTrap(ScavTrap &obj) : ClapTrap(obj)
 {
     std::cout << "copy constructor" << std::endl;
 }
+
 ScavTrap &ScavTrap::operator=(ScavTrap &obj)
 {
     if(this != &obj)
@@ -39,10 +41,12 @@ ScavTrap &ScavTrap::operator=(ScavTrap &obj)
     std::cout << "copy assignement constructor" << std::endl;
     return (*this);
 }
+
 ScavTrap::~ScavTrap()
 {
     std::cout << "Destructor" << std::endl;
 }
+
 void ScavTrap::attack(const std::string &target)
 {
     if (!hitpoint || !energypoints)

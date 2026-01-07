@@ -6,7 +6,7 @@
 /*   By: sfaouzi <sfaouzi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/05 22:48:38 by sfaouzi           #+#    #+#             */
-/*   Updated: 2026/01/05 22:48:39 by sfaouzi          ###   ########.fr       */
+/*   Updated: 2026/01/06 14:42:49 by sfaouzi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 ClapTrap::ClapTrap(): hitpoint(10), energypoints(10), damage(0)
 {
-    std::cout << "Default constructor" << std::endl;
+    std::cout << "clap Default constructor" << std::endl;
 }
 
 ClapTrap::ClapTrap(std::string name):name(name), hitpoint(10), energypoints(10), damage(0)
@@ -39,7 +39,7 @@ ClapTrap &ClapTrap::operator=(ClapTrap &obj)
 }
 ClapTrap::~ClapTrap()
 {
-    std::cout << "Destructor" << std::endl;
+    std::cout << "clap Destructor" << std::endl;
 }
 
 void ClapTrap::attack(const std::string &target)
