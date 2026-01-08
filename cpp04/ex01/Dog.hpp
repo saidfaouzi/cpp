@@ -1,19 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   Dog.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sfaouzi <sfaouzi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/08 15:35:42 by sfaouzi           #+#    #+#             */
-/*   Updated: 2026/01/08 15:38:48 by sfaouzi          ###   ########.fr       */
+/*   Created: 2026/01/08 15:50:09 by sfaouzi           #+#    #+#             */
+/*   Updated: 2026/01/08 17:17:26 by sfaouzi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#ifndef DOG_HPP
+#define DOG_HPP
+
 #include "Animal.hpp"
+#include "Brain.hpp"
 
-int main()
+class Dog : public Animal
 {
-    Animal s;
+private:
+    Brain* brain;
 
-}
+public:
+    Dog();
+    Dog(Dog &other);
+    Dog &operator=(Dog &other);
+    virtual ~Dog();
+
+    virtual void makeSound() const;
+};
+
+#endif

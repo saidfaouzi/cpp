@@ -6,7 +6,7 @@
 /*   By: sfaouzi <sfaouzi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/08 15:27:47 by sfaouzi           #+#    #+#             */
-/*   Updated: 2026/01/08 16:15:32 by sfaouzi          ###   ########.fr       */
+/*   Updated: 2026/01/08 17:36:37 by sfaouzi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,11 +31,6 @@ Animal &Animal::operator=(Animal &obj)
 Animal::~Animal()
 {
     std::cout << "Animal desctructor !" << std::endl;
-}
-
-void Animal::makeSound() const
-{
-    std::cout << "Animal sound :!" << std::endl;
 }
 
 std::string Animal::getType() const

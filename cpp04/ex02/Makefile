@@ -6,7 +6,7 @@
 #    By: sfaouzi <sfaouzi@student.1337.ma>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/01/08 15:18:50 by sfaouzi           #+#    #+#              #
-#    Updated: 2026/01/08 16:52:51 by sfaouzi          ###   ########.fr        #
+#    Updated: 2026/01/08 17:14:06 by sfaouzi          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,7 @@ NAME    =  Polymorphism
 CXX     = c++
 CXXFLAGS= -Wall -Wextra -Werror -std=c++98
 
-SRCS    = main.cpp Animal.cpp Cat.cpp Dog.cpp WrongCat.cpp WrongAnimal.cpp
+SRCS    = main.cpp Animal.cpp Cat.cpp Dog.cpp WrongCat.cpp WrongAnimal.cpp Brain.cpp 
 
 OBJS    = $(SRCS:.cpp=.o)
 
