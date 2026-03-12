@@ -6,40 +6,55 @@
 /*   By: sfaouzi <sfaouzi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/05 17:36:23 by sfaouzi           #+#    #+#             */
-/*   Updated: 2026/03/12 00:06:10 by sfaouzi          ###   ########.fr       */
+/*   Updated: 2026/03/12 01:15:42 by sfaouzi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Form.hpp"
 
-Form::Form() :name("default"), grade_to_sign(150), grade_to_execute(1)
+Form::Form() : name("default"), sign(false), grade_to_sign(150), grade_to_execute(1)
 {
     std::cout << "created object : " << std::endl;
 }
 
-Form::Form(std::string named, int sign, int exec): name(named), grade_to_sign(sign), grade_to_execute(exec)
+Form::Form(std::string named, int sign_grade, int exec_grade)
+    : name(named), sign(false), grade_to_sign(sign_grade), grade_to_execute(exec_grade)
 {
+    if (grade_to_sign < 1 || grade_to_execute < 1)
+        throw Form::GradeTooHighException();
+    if (grade_to_sign > 150 || grade_to_execute > 150)
+        throw Form::GradeTooLowException();
     std::cout << "parametrized constructor called : " << std::endl;
 }
-Form::Form(Form& other): name(other.name), grade_to_sign(other.grade_to_sign), grade_to_execute(other.grade_to_execute)
+Form::Form(Form& other)
+    : name(other.name), sign(other.sign), grade_to_sign(other.grade_to_sign), grade_to_execute(other.grade_to_execute)
 {
-    if(grade_to_execute < 1 || grade_to_execute < 1)
+    if (grade_to_sign < 1 || grade_to_execute < 1)
         throw Form::GradeTooHighException();
-    if(grade_to_sign > 150 || grade_to_sign > 150)
+    if (grade_to_sign > 150 || grade_to_execute > 150)
         throw Form::GradeTooLowException();
-    // *this->grade_to_execute = other.grade_to_execute;
-    // *this->grade_to_sign = other.grade_to_sign;
     std::cout << "copy constructor called : " << std::endl;
 }
 Form &Form::operator=(Form& other)
 {
-    (void)other;
+    if (this != &other)
+        sign = other.sign;
     std::cout << "copy assignement constructor called : " << std::endl;
     return *this;
 }
 Form::~Form()
 {
     std::cout << "deconstructor called : " << std::endl;
+}
+
+const char *Form::GradeTooHighException::what() const throw()
+{
+    return ("GradeTooHighException");
+}
+
+const char *Form::GradeTooLowException::what() const throw()
+{
+    return ("GradeTooLowException");
 }
 
 std::string Form::getName() const

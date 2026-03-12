@@ -6,11 +6,12 @@
 /*   By: sfaouzi <sfaouzi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/01 19:22:20 by sfaouzi           #+#    #+#             */
-/*   Updated: 2026/03/11 23:59:31 by sfaouzi          ###   ########.fr       */
+/*   Updated: 2026/03/12 01:15:03 by sfaouzi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Bureaucrat.hpp"
+#include "Form.hpp"
 
 Bureaucrat::Bureaucrat(): name("default")
 {
