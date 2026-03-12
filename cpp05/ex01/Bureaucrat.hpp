@@ -3,16 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   Bureaucrat.hpp                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sfaouzi <sfaouzi@student.1337.ma>          +#+  +:+       +#+        */
+/*   By: sfaouzi <sfaouzi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/01 19:22:13 by sfaouzi           #+#    #+#             */
-/*   Updated: 2026/03/05 23:00:34 by sfaouzi          ###   ########.fr       */
+/*   Updated: 2026/03/12 00:17:54 by sfaouzi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef BUREAUCRAT_HPP
 #define BUREAUCRAT_HPP
+
 #include <iostream>
+
+class Form;
 
 class Bureaucrat
 {

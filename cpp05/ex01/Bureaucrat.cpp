@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Bureaucrat.cpp                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sfaouzi <sfaouzi@student.1337.ma>          +#+  +:+       +#+        */
+/*   By: sfaouzi <sfaouzi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/01 19:22:20 by sfaouzi           #+#    #+#             */
-/*   Updated: 2026/03/05 23:11:38 by sfaouzi          ###   ########.fr       */
+/*   Updated: 2026/03/11 23:59:31 by sfaouzi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,13 +85,6 @@ std::ostream &operator<<(std::ostream& os, Bureaucrat& b)
 {
     os << b.getName() << ", bureaucrat grade " << b.getGrade() << ".";
     return os;
-}
-
-void Bureaucrat::signForm()
-{
-    Form::beSigned();
-    <bureaucrat> signed <form>
-    std::cout  << Bureaucrat  << "signed " << Form 
 }
 
 void Bureaucrat::signForm(Form& form)
